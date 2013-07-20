@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="#AAFF00"
+                android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@android:id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF9900"
+            android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="#CCAAFF"
+            android:layout_toRightOf="@android:id/icon"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LALALALA" />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LALALALA" />
+    </LinearLayout>
+</RelativeLayout><!-- From: file:/Users/nakes/Projects/PlayServicesMapsProject/PlayServicesMaps/src/main/res/layout/marker_view.xml -->
