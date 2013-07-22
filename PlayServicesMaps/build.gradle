@@ -13,8 +13,13 @@ repositories {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:13.0.+'
     compile 'com.google.android.gms:play-services:3.1.36'
+    compile ('com.octo.android.robospice:robospice-google-http-client:1.4.6') {
+        exclude group: 'com.google.android', module: 'support-v4'
+    }
+    compile ('com.google.http-client:google-http-client-jackson:1.15.0-rc') {
+        exclude group: 'xpp3', module: 'xpp3'
+    }
 }
 
 android {
