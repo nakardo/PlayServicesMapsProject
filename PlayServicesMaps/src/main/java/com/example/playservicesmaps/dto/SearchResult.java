@@ -11,7 +11,7 @@ import com.google.api.client.util.Key;
 public class SearchResult {
     @Key private List<Item> results;
 
-    public List<Item> getResultsWithLocation() {
+    public List<Item> filterResultsWithLocation() {
         List<Item> filteredResults = new ArrayList<Item>();
         for (Item item : results) {
             if (item.getLocation().hasLocation()) filteredResults.add(item);

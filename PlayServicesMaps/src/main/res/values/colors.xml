@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_text">#0637b3</color>
+    <color name="alternative_text">#666</color>
+    <color name="price_text">#900</color>
+</resources>

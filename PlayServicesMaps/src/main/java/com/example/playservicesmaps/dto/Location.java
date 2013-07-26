@@ -17,6 +17,10 @@ public class Location {
     @Key private Object latitude;
     @Key private Object longitude;
 
+    public String getAddressLine() {
+        return address_line;
+    }
+
     public double getLatitude() {
         return Double.valueOf(latitude.toString());
     }
@@ -27,7 +31,7 @@ public class Location {
 
     @Override
     public String toString() {
-        return address_line + " - " + neighborhood.getName() + " - " + state.getName();
+        return neighborhood.getName() + " - " + state.getName();
     }
 
     public boolean hasLocation() {

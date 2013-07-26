@@ -3,6 +3,8 @@ package com.example.playservicesmaps;
 import android.app.Dialog;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.playservicesmaps.dto.Item;
@@ -24,91 +26,45 @@ import com.octo.android.robospice.persistence.exception.SpiceException;
 import com.octo.android.robospice.request.listener.RequestListener;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
-public class MainActivity extends BaseSpiceActivity implements GoogleMap.OnInfoWindowClickListener {
+public class MainActivity extends BaseSpiceActivity {
     private SearchRequest mSearchRequest;
+    private HashMap<Marker, Item> mMarkerMap;
     private GoogleMap mMap;
 
-    private void setupGoogleMap() {
+    private static HashMap<Marker, Item> addMarkers(GoogleMap map, List<Item> results) {
+        HashMap<Marker, Item> markerMap = new HashMap<Marker, Item>();
+        for (Item item : results) {
+            Location l = item.getLocation();
+            Marker marker = map.addMarker(new MarkerOptions()
+                    .position(new LatLng(l.getLatitude(), l.getLongitude())));
+
+            markerMap.put(marker, item);
+        }
+
+        return markerMap;
+    }
+
+
+    private static LatLngBounds calculateMapBounds(HashMap<Marker, Item> markerMap) {
+        LatLngBounds.Builder builder = new LatLngBounds.Builder();
+        for (Item item : markerMap.values()) {
+            Location l = item.getLocation();
+            builder.include(new LatLng(l.getLatitude(), l.getLongitude()));
+        }
+
+        return builder.build();
+    }
+
+    private void setupMap() {
         SupportMapFragment fragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         fragment.getView().setVisibility(View.VISIBLE);
 
         mMap = fragment.getMap();
-        mMap.setOnInfoWindowClickListener(this);
-        mMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
-            @Override
-            public View getInfoWindow(Marker marker) {
-                return null;
-            }
-
-            @Override
-            public View getInfoContents(Marker marker) {
-                return getLayoutInflater().inflate(R.layout.marker_view, null);
-            }
-        });
-    }
-
-    @Override
-    public void onInfoWindowClick(Marker marker) {
-        // Zoom in, animating the camera.
-//        mMap.animateCamera(CameraUpdateFactory.zoomTo(18), 3000, null);
-//        mMap.setOnCameraChangeListener(new RotationListener(marker.getPosition()));
-
-        // Construct a CameraPosition focusing on Mountain View and animate the camera to that position.
-        CameraPosition cameraPosition = new CameraPosition.Builder()
-                .target(marker.getPosition())       // Sets the center of the map to Mountain View
-                .zoom(18)                           // Sets the zoom
-                .bearing(45)                        // Sets the orientation of the camera to east
-                .tilt(45)                           // Sets the tilt of the camera to 30 degrees
-                .build();                           // Creates a CameraPosition from the builder
-        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
-    }
-
-    private class RotationListener implements GoogleMap.OnCameraChangeListener {
-        private LatLng mPosition;
-        private int mBearing = 45;
-
-        public RotationListener(LatLng position) {
-            super();
-            mPosition = position;
-        }
-
-        @Override
-        public void onCameraChange(CameraPosition cameraPosition) {
-            CameraPosition p = new CameraPosition.Builder()
-                    .target(mPosition)
-                    .zoom(18)
-                    .bearing(mBearing)
-                    .tilt(90)                   // Sets the tilt of the camera to 30 degrees
-                    .build();                   // Creates a CameraPosition from the builder
-            mBearing += 45;
-            mMap.animateCamera(CameraUpdateFactory.newCameraPosition(p), 5000, null);
-        }
-    }
-
-    private void createMarkers(List<Item> results) {
-        List<LatLng> positions = new ArrayList<LatLng>();
-        for (Item item : results) {
-            Location loc = item.getLocation();
-            LatLng position = new LatLng(loc.getLatitude(), loc.getLongitude());
-            positions.add(position);
-            mMap.addMarker(new MarkerOptions().position(position)
-                    .title(loc.toString()));
-        }
-
-        CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngBounds(getMapBounds(positions), 50);
-        mMap.animateCamera(cameraUpdate);
-    }
-
-
-    private LatLngBounds getMapBounds(List<LatLng> positions) {
-        LatLngBounds.Builder builder = new LatLngBounds.Builder();
-        for (LatLng position : positions) {
-            builder.include(position);
-        }
-
-        return builder.build();
+        mMap.setOnInfoWindowClickListener(new ItemsInfoWindowClickListener());
+        mMap.setInfoWindowAdapter(new ItemsInfoWindowAdapter());
     }
 
     @Override
@@ -143,21 +99,116 @@ public class MainActivity extends BaseSpiceActivity implements GoogleMap.OnInfoW
                 // whether will be able to user the app or not.
             }
         } else if (mMap == null) {
-            setupGoogleMap();
+            setupMap();
         }
     }
 
-    public final class SearchRequestListener implements RequestListener<SearchResult> {
+    private class SearchRequestListener implements RequestListener<SearchResult> {
 
         @Override
         public void onRequestSuccess(final SearchResult result) {
-            List<Item> filteredResults = result.getResultsWithLocation();
-            createMarkers(filteredResults);
+            mMarkerMap = addMarkers(mMap, result.filterResultsWithLocation());
+            CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngBounds(calculateMapBounds(mMarkerMap), 50);
+            mMap.animateCamera(cameraUpdate);
         }
 
         @Override
         public void onRequestFailure(SpiceException spiceException) {
             Toast.makeText(MainActivity.this, "failure", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private class ItemsInfoWindowClickListener implements GoogleMap.OnInfoWindowClickListener {
+
+        @Override
+        public void onInfoWindowClick(Marker marker) {
+            CameraPosition cameraPosition = new CameraPosition.Builder()
+                    .target(marker.getPosition())
+                    .zoom(18)
+                    .bearing(45)
+                    .tilt(45)
+                    .build();
+
+            mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+            mMap.setOnCameraChangeListener(new RotationListener(marker.getPosition()));
+        }
+    }
+
+    private class ItemsInfoWindowAdapter implements GoogleMap.InfoWindowAdapter {
+
+        private void setupLayout(ViewGroup view, Marker marker) {
+            Item item = mMarkerMap.get(marker);
+
+            // address.
+            TextView addressText = (TextView) view.findViewById(R.id.address_line);
+            addressText.setText(item.getLocation().getAddressLine());
+
+            // location.
+            TextView locationText = (TextView) view.findViewById(R.id.location);
+            locationText.setText(item.getLocation().toString());
+
+            // title.
+            TextView titleText = (TextView) view.findViewById(R.id.title);
+            titleText.setText(item.getTitle());
+
+            // price.
+            TextView priceText = (TextView) view.findViewById(R.id.price);
+            priceText.setText(item.getPrice());
+
+            // phone.
+            ViewGroup phoneContainer = (ViewGroup) view.findViewById(R.id.phone_container);
+            if (item.getAddress().getPhone() != null) {
+                phoneContainer.setVisibility(View.VISIBLE);
+                TextView phoneText = (TextView) view.findViewById(R.id.phone);
+                phoneText.setText(item.getAddress().getPhone());
+            } else {
+                phoneContainer.setVisibility(View.GONE);
+            }
+        }
+
+        @Override
+        public View getInfoWindow(Marker marker) {
+            return null;
+        }
+
+        @Override
+        public View getInfoContents(Marker marker) {
+            View view =  getLayoutInflater().inflate(R.layout.marker_view, null);
+            setupLayout((ViewGroup) view, marker);
+            return view;
+        }
+    }
+
+    private class RotationListener implements GoogleMap.OnCameraChangeListener {
+        private static final int BEARING_INCREMENT = 90;
+        private LatLng mPosition;
+        private int mBearing = BEARING_INCREMENT;
+
+        public RotationListener(LatLng position) {
+            super();
+            mPosition = position;
+        }
+
+        @Override
+        public void onCameraChange(CameraPosition cameraPosition) {
+            CameraPosition p = new CameraPosition.Builder()
+                    .target(mPosition)
+                    .zoom(18)
+                    .bearing(mBearing)
+                    .tilt(45)
+                    .build();
+            mBearing += BEARING_INCREMENT;
+            mMap.animateCamera(CameraUpdateFactory.newCameraPosition(p), 5000, new RotationCancellableCallback());
+        }
+
+        private class RotationCancellableCallback implements GoogleMap.CancelableCallback {
+            @Override
+            public void onFinish() {}
+
+            @Override
+            public void onCancel() {
+                mMap.setOnCameraChangeListener(null);
+            }
         }
     }
 }

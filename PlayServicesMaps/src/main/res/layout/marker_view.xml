@@ -1,33 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:background="#AAFF00"
-                android:layout_height="match_parent">
-
-    <ImageView
-            android:id="@android:id/icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#FF9900"
-            android:src="@drawable/ic_launcher" />
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" >
 
     <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:background="#CCAAFF"
-            android:layout_toRightOf="@android:id/icon"
-            android:orientation="vertical">
+            android:orientation="vertical" >
 
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="LALALALA" />
+                android:textColor="@color/default_text"
+                android:textSize="16dp"
+                android:includeFontPadding="false"
+                android:text="Cramer 2636 2600"
+                android:id="@+id/address_line"/>
 
         <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="LALALALA" />
+                android:textColor="@color/default_text"
+                android:textSize="12dp"
+                android:includeFontPadding="false"
+                android:text="Belgrano - Capital Federal"
+                android:id="@+id/location"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/alternative_text"
+                android:textSize="12dp"
+                android:includeFontPadding="false"
+                android:text="Alquiler Temporario Belgrano - Pileta - Gym"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/title"/>
+
+        <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/price_text"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:includeFontPadding="false"
+                android:layout_marginBottom="5dp"
+                android:text="$ 2200" />
+
+        <LinearLayout
+                android:id="@+id/phone_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/phone_icon" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/alternative_text"
+                    android:textSize="13dp"
+                    android:includeFontPadding="false"
+                    android:text="(011) 45421771"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/phone"/>
+        </LinearLayout>
     </LinearLayout>
-</RelativeLayout>
+</FrameLayout>

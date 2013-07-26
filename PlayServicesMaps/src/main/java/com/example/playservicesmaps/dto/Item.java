@@ -10,8 +10,22 @@ import java.math.BigDecimal;
 public class Item {
 
     @Key private String thumbnail;
+    @Key private String title;
     @Key private BigDecimal price;
+    @Key private Address address;
     @Key private Location location;
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getPrice() {
+        return "$ " + price.toString();
+    }
+
+    public Address getAddress() {
+        return address;
+    }
 
     public Location getLocation() {
         return location;

@@ -12,9 +12,6 @@
       <config />
     </shared>
   </component>
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="exception" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="7503acb8-8dd8-4503-885d-7d019ed025a3" name="Default" comment="" />
     <ignored path="PlayServicesMaps.iws" />
@@ -70,38 +67,7 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/MainActivity.java" line="159" class="com.example.playservicesmaps.MainActivity.SearchRequestListener" package="com.example.playservicesmaps">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/MainActivity.java" line="91" class="com.example.playservicesmaps.MainActivity" package="com.example.playservicesmaps">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -114,46 +80,31 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="27" selection-start="2626" selection-end="2626" vertical-scroll-proportion="0.62371135" vertical-offset="673" max-vertical-offset="2535">
+            <state line="196" column="33" selection-start="7416" selection-end="7416" vertical-scroll-proportion="0.7495682" vertical-offset="2101" max-vertical-offset="2895">
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3919#3927#0" expanded="true" />
+                <element signature="e#1545#1559#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoogleMap.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/PlayServicesMaps/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3136.aar/classes.jar!/com/google/android/gms/maps/GoogleMap.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="109" column="28" selection-start="5569" selection-end="5569" vertical-scroll-proportion="-7.2" vertical-offset="1440" max-vertical-offset="2205">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="marker_view.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PlayServicesMaps/src/main/res/layout/marker_view.xml">
-          <provider selected="true" editor-type-id="android-designer">
+          <provider editor-type-id="android-designer">
             <state />
           </provider>
-          <provider editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="48" selection-start="2048" selection-end="2063" vertical-scroll-proportion="-6.5555553" vertical-offset="588" max-vertical-offset="1155">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchResult.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/dto/SearchResult.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#342#348#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Item.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/dto/Item.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="5" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -161,7 +112,7 @@
       <file leaf-file-name="SearchService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/SearchService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+            <state line="21" column="43" selection-start="834" selection-end="834" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
               <folding />
             </state>
           </provider>
@@ -170,7 +121,25 @@
       <file leaf-file-name="SearchRequest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/SearchRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="60" selection-start="968" selection-end="968" vertical-scroll-proportion="0.0" vertical-offset="137" max-vertical-offset="525">
+            <state line="18" column="18" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Item.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/dto/Item.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="23" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Address.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/dto/Address.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="1" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -181,18 +150,7 @@
       <file leaf-file-name="Location.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/dto/Location.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="5" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="645">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultRequestProgressReporter.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-24/filestore/com.octo.android.robospice/robospice/1.4.6/jar/bd1fe3268f36115043bbb3423439dee2b276fff2/robospice-1.4.6.jar!/com/octo/android/robospice/request/reporter/DefaultRequestProgressReporter.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="20" selection-start="3014" selection-end="3014" vertical-scroll-proportion="-4.08" vertical-offset="423" max-vertical-offset="780">
+            <state line="25" column="5" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
               <folding />
             </state>
           </provider>
@@ -237,7 +195,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="1374294283000" />
+        <entry key="$PROJECT_DIR$" value="1374289445000" />
         <entry key="$PROJECT_DIR$/../gpsdemos/gradle" value="1369336864000" />
       </map>
     </option>
@@ -246,17 +204,19 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/PlayServicesMaps/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/PlayServicesMaps/src/main/res/layout/marker_view.xml" />
         <option value="$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/MapsSpiceService.java" />
-        <option value="$PROJECT_DIR$/PlayServicesMaps/build.gradle" />
         <option value="$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/SearchService.java" />
         <option value="$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/BaseSpiceActivity.java" />
         <option value="$PROJECT_DIR$/PlayServicesMaps/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/dto/Filter.java" />
-        <option value="$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/dto/SearchResult.java" />
-        <option value="$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/dto/Item.java" />
-        <option value="$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/dto/Location.java" />
         <option value="$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/SearchRequest.java" />
+        <option value="$PROJECT_DIR$/PlayServicesMaps/build.gradle" />
+        <option value="$PROJECT_DIR$/PlayServicesMaps/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/dto/SearchResult.java" />
+        <option value="$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/dto/Location.java" />
+        <option value="$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/dto/Item.java" />
+        <option value="$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/dto/Address.java" />
+        <option value="$PROJECT_DIR$/PlayServicesMaps/src/main/res/layout/marker_view.xml" />
         <option value="$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/MainActivity.java" />
       </list>
     </option>
@@ -264,7 +224,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="739" />
+    <option name="height" value="727" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -333,46 +293,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="google-http-client-1.15.0-rc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="google-http-client-1.15.0-rc.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlayServicesMaps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="google-http-client-1.15.0-rc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="google-http-client-1.15.0-rc.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlayServicesMaps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="PlayServicesMapsProject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -410,6 +330,92 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlayServicesMaps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlayServicesMapsProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlayServicesMaps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlayServicesMaps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlayServicesMapsProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlayServicesMaps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlayServicesMaps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlayServicesMapsProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlayServicesMaps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-mdpi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -484,7 +490,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -497,12 +503,13 @@
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Android_2_2" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Android Application.PlayServicesMaps">
     <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
@@ -690,32 +697,32 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="739" extended-state="6" />
+    <frame x="0" y="22" width="1280" height="727" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="701" y="378" width="352" height="270" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32873377" sideWeight="0.6738056" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39579967" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39538714" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39538714" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24554294" sideWeight="0.29983526" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48465267" sideWeight="0.65640193" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48434925" sideWeight="0.65640193" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279483" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32784185" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.67205167" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24554294" sideWeight="0.67205167" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3279483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24554294" sideWeight="0.6738056" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3261944" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="701" y="378" width="352" height="270" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -725,13 +732,13 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24958813" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -809,6 +816,27 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/SearchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/SearchRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="60" selection-start="968" selection-end="968" vertical-scroll-proportion="0.0" vertical-offset="137" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/dto/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="5" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/dto/Filter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="13" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
@@ -816,74 +844,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-24/filestore/com.octo.android.robospice/robospice/1.4.6/jar/bd1fe3268f36115043bbb3423439dee2b276fff2/robospice-1.4.6.jar!/com/octo/android/robospice/request/reporter/DefaultRequestProgressReporter.class">
+    <entry file="file://$PROJECT_DIR$/PlayServicesMaps/src/main/res/values/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="20" selection-start="3014" selection-end="3014" vertical-scroll-proportion="-4.08" vertical-offset="423" max-vertical-offset="780">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="339">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-24/filestore/com.google.http-client/google-http-client/1.15.0-rc/jar/ab70279505f72c5501463ff6f4efcd1c70a72625/google-http-client-1.15.0-rc.jar!/com/google/api/client/json/JsonParser.class">
+    <entry file="file://$PROJECT_DIR$/PlayServicesMaps/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="22" selection-start="178" selection-end="178" vertical-scroll-proportion="0.13562387" vertical-offset="0" max-vertical-offset="1560">
+        <state line="4" column="27" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-24/filestore/com.google.http-client/google-http-client/1.15.0-rc/jar/ab70279505f72c5501463ff6f4efcd1c70a72625/google-http-client-1.15.0-rc.jar!/com/google/api/client/json/Json.class">
+    <entry file="file://$PROJECT_DIR$/PlayServicesMaps/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="169" selection-end="169" vertical-scroll-proportion="0.13250883" vertical-offset="0" max-vertical-offset="566">
+        <state line="12" column="1" selection-start="206" selection-end="206" vertical-scroll-proportion="0.46902654" vertical-offset="21" max-vertical-offset="600">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-24/filestore/com.google.http-client/google-http-client/1.15.0-rc/jar/ab70279505f72c5501463ff6f4efcd1c70a72625/google-http-client-1.15.0-rc.jar!/com/google/api/client/json/JsonString.class">
+    <entry file="file://$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/dto/SearchResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="18" selection-start="323" selection-end="323" vertical-scroll-proportion="0.18551236" vertical-offset="0" max-vertical-offset="566">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-24/filestore/com.google.http-client/google-http-client/1.15.0-rc/jar/ab70279505f72c5501463ff6f4efcd1c70a72625/google-http-client-1.15.0-rc.jar!/com/google/api/client/util/Value.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="18" selection-start="323" selection-end="323" vertical-scroll-proportion="0.18551236" vertical-offset="0" max-vertical-offset="566">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-24/filestore/com.google.http-client/google-http-client/1.15.0-rc/jar/ab70279505f72c5501463ff6f4efcd1c70a72625/google-http-client-1.15.0-rc.jar!/com/google/api/client/util/Key.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="18" selection-start="323" selection-end="323" vertical-scroll-proportion="0.18551236" vertical-offset="0" max-vertical-offset="566">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-24/filestore/com.google.http-client/google-http-client/1.15.0-rc/jar/ab70279505f72c5501463ff6f4efcd1c70a72625/google-http-client-1.15.0-rc.jar!/com/google/api/client/util/Beta.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="18" selection-start="496" selection-end="496" vertical-scroll-proportion="0.18987341" vertical-offset="0" max-vertical-offset="553">
-          <folding />
+        <state line="16" column="0" selection-start="391" selection-end="391" vertical-scroll-proportion="0.33678755" vertical-offset="0" max-vertical-offset="579">
+          <folding>
+            <element signature="e#345#351#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/dto/Location.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="5" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="645">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-24/filestore/com.octo.android.robospice/robospice/1.4.6/jar/bd1fe3268f36115043bbb3423439dee2b276fff2/robospice-1.4.6.jar!/com/octo/android/robospice/request/listener/RequestListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="190" selection-end="190" vertical-scroll-proportion="0.20661157" vertical-offset="0" max-vertical-offset="363">
+        <state line="25" column="5" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/dto/Item.java">
+    <entry file="file://$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/dto/Address.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="5" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+        <state line="20" column="1" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -892,46 +892,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/SearchService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+        <state line="21" column="43" selection-start="834" selection-end="834" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/SearchRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="60" selection-start="968" selection-end="968" vertical-scroll-proportion="0.0" vertical-offset="137" max-vertical-offset="525">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="18" column="18" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0" vertical-offset="67" max-vertical-offset="435">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/dto/SearchResult.java">
+    <entry file="file://$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/dto/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#342#348#0" expanded="true" />
-          </folding>
+        <state line="26" column="23" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PlayServicesMaps/src/main/res/layout/marker_view.xml">
-      <provider selected="true" editor-type-id="android-designer">
+      <provider editor-type-id="android-designer">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="48" selection-start="2048" selection-end="2063" vertical-scroll-proportion="-6.5555553" vertical-offset="588" max-vertical-offset="1155">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/PlayServicesMaps/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3136.aar/classes.jar!/com/google/android/gms/maps/GoogleMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="28" selection-start="5569" selection-end="5569" vertical-scroll-proportion="-7.2" vertical-offset="1440" max-vertical-offset="2205">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PlayServicesMaps/src/main/java/com/example/playservicesmaps/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="27" selection-start="2626" selection-end="2626" vertical-scroll-proportion="0.62371135" vertical-offset="673" max-vertical-offset="2535">
+        <state line="196" column="33" selection-start="7416" selection-end="7416" vertical-scroll-proportion="0.7495682" vertical-offset="2101" max-vertical-offset="2895">
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3919#3927#0" expanded="true" />
+            <element signature="e#1545#1559#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -976,7 +977,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.6</last-edited>
+          <last-edited>Android SDK</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -993,7 +994,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1013,7 +1013,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>commons-io-1.3.2</last-edited>
+          <last-edited>robospice-1.4.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
